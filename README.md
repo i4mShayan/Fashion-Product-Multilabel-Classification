@@ -1,6 +1,6 @@
 # Fashion Product Multilabel Classification
 
-## Choosing the Best Base Model
+# Finding the Ideal Base Model
 <table>
   <thead>
     <tr>
@@ -19,7 +19,7 @@
         <strong><em>Optimizer:</em></strong> <code>SGD</code><br>
         <strong><em>Momentum:</em></strong> <code>0.9</code><br>
         <strong><em>Batch Size:</em></strong> <code>32</code><br>
-        <strong><em>L2 Regularization:</em></strong> <code>None</code><br>
+        <strong><em>Regularization:</em></strong> <code>No</code><br>
         <strong><em>Input Resolution:</em></strong> <code>Low</code>
       </td>
       <td>
@@ -38,7 +38,7 @@
         <strong><em>Optimizer:</em></strong> <code>SGD</code><br>
         <strong><em>Momentum:</em></strong> <code>0.9</code><br>
         <strong><em>Batch Size:</em></strong> <code>32</code><br>
-        <strong><em>L2 Regularization:</em></strong> <code>None</code><br>
+        <strong><em>Regularization:</em></strong> <code>No</code><br>
         <strong><em>Input Resolution:</em></strong> <code>Low</code>
       </td>
       <td>
@@ -57,7 +57,7 @@
         <strong><em>Optimizer:</em></strong> <code>SGD</code><br>
         <strong><em>Momentum:</em></strong> <code>0.9</code><br>
         <strong><em>Batch Size:</em></strong> <code>32</code><br>
-        <strong><em>L2 Regularization:</em></strong> <code>None</code><br>
+        <strong><em>Regularization:</em></strong> <code>No</code><br>
         <strong><em>Input Resolution:</em></strong> <code>Low</code>
       </td>
       <td>
@@ -76,7 +76,7 @@
         <strong><em>Optimizer:</em></strong> <code>SGD</code><br>
         <strong><em>Momentum:</em></strong> <code>0.9</code><br>
         <strong><em>Batch Size:</em></strong> <code>32</code><br>
-        <strong><em>L2 Regularization:</em></strong> <code>None</code><br>
+        <strong><em>Regularization:</em></strong> <code>No</code><br>
         <strong><em>Input Resolution:</em></strong> <code>Low</code>
       </td>
       <td>
@@ -91,8 +91,9 @@
 
 
 
-## Image Augmentation Pipeline
+# Image Augmentation
 
+## Pipeline
 The `augment_image` function applies the following transformations to enhance image variability:
 
 - **Random Scaling**: Zooms in and out by up to 35%.
@@ -106,3 +107,109 @@ The `augment_image` function applies the following transformations to enhance im
 | ![Augmentation_Example_1](https://github.com/user-attachments/assets/6b41c041-de03-49ed-90bd-669f6f268b47) |
 | ![Augmentation_Example_2](https://github.com/user-attachments/assets/23e3f51c-456c-40d1-8f63-736fa1203e9b) |
 | ![Augmentation_Example_3](https://github.com/user-attachments/assets/113213ea-8c5a-4039-be93-bd194d39f171) |
+
+## Result
+<table>
+  <thead>
+    <tr>
+      <th>Model</th>
+      <th>Accuracy</th>
+      <th>Precision & Recall</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <strong><em>Base Model:</em></strong> <code>ResNet-50</code><br>
+        <strong><em>Epochs:</em></strong> <code>100</code><br>
+        <strong><em>Augmentation:</em></strong> <code>No</code><br>
+        <strong><em>Learning Rate:</em></strong> <code>1e-5</code><br>
+        <strong><em>Optimizer:</em></strong> <code>SGD</code><br>
+        <strong><em>Momentum:</em></strong> <code>0.9</code><br>
+        <strong><em>Batch Size:</em></strong> <code>32</code><br>
+        <strong><em>Regularization:</em></strong> <code>No</code><br>
+        <strong><em>Input Resolution:</em></strong> <code>Low</code>
+      </td>
+      <td>
+        <img src="https://github.com/user-attachments/assets/427d5d6c-1d5d-4448-96f6-abe4282de737" alt="Accuracy" width="300" height="200">
+      </td>
+      <td>
+        <img src="https://github.com/user-attachments/assets/0b5592e1-0cf2-416a-9b0f-b8856e587a96" alt="Precision Recall" width="300" height="200">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <strong><em>Base Model:</em></strong> <code>ResNet-50</code><br>
+        <strong><em>Epochs:</em></strong> <code>100</code><br>
+        <strong><em>Augmentation:</em></strong> <code>Yes</code><br>
+        <strong><em>Learning Rate:</em></strong> <code>1e-5</code><br>
+        <strong><em>Optimizer:</em></strong> <code>SGD</code><br>
+        <strong><em>Momentum:</em></strong> <code>0.9</code><br>
+        <strong><em>Batch Size:</em></strong> <code>32</code><br>
+        <strong><em>Regularization:</em></strong> <code>No</code><br>
+        <strong><em>Input Resolution:</em></strong> <code>Medium</code>
+      </td>
+      <td>
+        <img src="https://github.com/user-attachments/assets/504e7654-8fd3-47ce-bb94-dd293cddff0a" alt="Accuracy" width="300" height="200">
+      </td>
+      <td>
+        <img src="https://github.com/user-attachments/assets/52b5b298-c9de-4e28-9c9b-bd676b68e3dc" alt="Precision Recall" width="300" height="200">
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+# Regularization
+After applying image augmentation, the model improves but overfits, but we can address this issue by incorporating L2 regularization to enhance generalization.
+
+## Result
+<table>
+  <thead>
+    <tr>
+      <th>Model</th>
+      <th>Accuracy</th>
+      <th>Precision & Recall</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <strong><em>Base Model:</em></strong> <code>ResNet-50</code><br>
+        <strong><em>Epochs:</em></strong> <code>100</code><br>
+        <strong><em>Augmentation:</em></strong> <code>Yes</code><br>
+        <strong><em>Learning Rate:</em></strong> <code>1e-5</code><br>
+        <strong><em>Optimizer:</em></strong> <code>SGD</code><br>
+        <strong><em>Momentum:</em></strong> <code>0.9</code><br>
+        <strong><em>Batch Size:</em></strong> <code>32</code><br>
+        <strong><em>Regularization:</em></strong> <code>No</code><br>
+        <strong><em>Input Resolution:</em></strong> <code>Medium</code>
+      </td>
+      <td>
+        <img src="https://github.com/user-attachments/assets/504e7654-8fd3-47ce-bb94-dd293cddff0a" alt="Accuracy" width="300" height="200">
+      </td>
+      <td>
+        <img src="https://github.com/user-attachments/assets/52b5b298-c9de-4e28-9c9b-bd676b68e3dc" alt="Precision Recall" width="300" height="200">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <strong><em>Base Model:</em></strong> <code>ResNet-50</code><br>
+        <strong><em>Epochs:</em></strong> <code>50</code><br>
+        <strong><em>Augmentation:</em></strong> <code>Yes</code><br>
+        <strong><em>Learning Rate:</em></strong> <code>1e-5</code><br>
+        <strong><em>Optimizer:</em></strong> <code>SGD</code><br>
+        <strong><em>Momentum:</em></strong> <code>0.9</code><br>
+        <strong><em>Batch Size:</em></strong> <code>32</code><br>
+        <strong><em>Regularization:</em></strong> <code>L2 (0.1)</code><br>
+        <strong><em>Input Resolution:</em></strong> <code>Medium</code>
+      </td>
+      <td>
+        <img src="https://github.com/user-attachments/assets/90a0f0ed-d16e-4084-aaa6-6c67601173a1" alt="Accuracy" width="300" height="200">
+      </td>
+      <td>
+        <img src="https://github.com/user-attachments/assets/684c619d-b3e4-479f-b254-ae38fc2e6159" alt="Precision Recall" width="300" height="200">
+      </td>
+    </tr>
+  </tbody>
+</table>
+
