@@ -210,6 +210,25 @@ After applying image augmentation, the model improves but overfits, but we can a
         <img src="https://github.com/user-attachments/assets/684c619d-b3e4-479f-b254-ae38fc2e6159" alt="Precision Recall" width="300" height="200">
       </td>
     </tr>
+    <tr>
+      <td>
+        <strong><em>Base Model:</em></strong> <code>ResNet-50</code><br>
+        <strong><em>Epochs:</em></strong> <code>50</code><br>
+        <strong><em>Augmentation:</em></strong> <code>Yes</code><br>
+        <strong><em>Learning Rate:</em></strong> <code>1e-5</code><br>
+        <strong><em>Optimizer:</em></strong> <code>SGD</code><br>
+        <strong><em>Momentum:</em></strong> <code>0.9</code><br>
+        <strong><em>Batch Size:</em></strong> <code>32</code><br>
+        <strong><em>Regularization:</em></strong> <code>L2 (0.01)</code><br>
+        <strong><em>Input Resolution:</em></strong> <code>Medium</code>
+      </td>
+      <td>
+        <img src="https://github.com/user-attachments/assets/5ae9fcff-13b1-4a9d-b1dd-88183655e541" alt="Accuracy" width="300" height="200">
+      </td>
+      <td>
+        <img src="https://github.com/user-attachments/assets/4583520a-6798-4b9a-b0f3-7c3354060fa6" alt="Precision Recall" width="300" height="200">
+      </td>
+    </tr>
   </tbody>
 </table>
 
