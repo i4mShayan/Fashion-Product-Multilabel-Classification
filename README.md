@@ -229,6 +229,35 @@ After applying image augmentation, the model improves but overfits, but we can a
         <img src="https://github.com/user-attachments/assets/4583520a-6798-4b9a-b0f3-7c3354060fa6" alt="Precision Recall" width="300" height="200">
       </td>
     </tr>
+    <tr>
+      <td>
+        <strong><em>Base Model:</em></strong> <code>ResNet-50</code><br>
+        <strong><em>Epochs:</em></strong> <code>50</code><br>
+        <strong><em>Augmentation:</em></strong> <code>Yes</code><br>
+        <strong><em>Learning Rate:</em></strong> <code>1e-5</code><br>
+        <strong><em>Optimizer:</em></strong> <code>SGD</code><br>
+        <strong><em>Momentum:</em></strong> <code>0.9</code><br>
+        <strong><em>Batch Size:</em></strong> <code>32</code><br>
+        <strong><em>Regularization:</em></strong> <code>L2 (0.05)</code><br>
+        <strong><em>Input Resolution:</em></strong> <code>Medium</code>
+      </td>
+      <td>
+        <img src="https://github.com/user-attachments/assets/9edba428-0cbc-4add-9f52-f88816df7ead" alt="Accuracy" width="300" height="200">
+      </td>
+      <td>
+        <img src="https://github.com/user-attachments/assets/b1e1e59e-322f-4a93-b12f-f841bca99605" alt="Precision Recall" width="300" height="200">
+      </td>
+    </tr>
   </tbody>
 </table>
+
+# Examples
+## From Train Set
+![image](https://github.com/user-attachments/assets/4f35229f-bbb4-4afe-9e2d-8a228571bb93)
+
+
+## From Test Set
+![image](https://github.com/user-attachments/assets/f5111891-1c5a-46a6-aa52-a9aa52f5f4f9)
+
+
 
