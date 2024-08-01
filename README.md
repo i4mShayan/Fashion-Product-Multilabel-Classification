@@ -253,11 +253,16 @@ After applying image augmentation, the model improves but overfits, but we can a
 
 # Examples
 ## From Train Set
-![image](https://github.com/user-attachments/assets/4f35229f-bbb4-4afe-9e2d-8a228571bb93)
+![image](https://github.com/user-attachments/assets/b2216af9-8df7-44a8-be23-345b77a70431)
+![image](https://github.com/user-attachments/assets/8d7e1f38-3097-4f14-bd84-ee8efb13119a)
+![image](https://github.com/user-attachments/assets/6c7e3842-bc07-46d4-a0dc-e8832a143534)
+
 
 
 ## From Test Set
 ![image](https://github.com/user-attachments/assets/f5111891-1c5a-46a6-aa52-a9aa52f5f4f9)
+![image](https://github.com/user-attachments/assets/a7bc7b11-07bf-4141-be4b-ea58240c99c5)
+![image](https://github.com/user-attachments/assets/0629ce04-ac9c-49fa-9fd6-f7e18c12b0a8)
 
 
 
