@@ -99,7 +99,7 @@ The `augment_image` function applies the following transformations to enhance im
 - **Random Scaling**: Zooms in and out by up to 35%.
 - **Random Resized Crop**: Crops and resizes the image to the target dimensions with a scale range of 50% to 100%.
 - **Horizontal Flip**: Flips the image horizontally with a 75% probability.
-- **Rotation**: Rotates the image randomly by up to 10 degrees.
+- **Rotation**: Rotates the image randomly by up to 15 degrees.
 - **Brightness and Contrast Adjustment**: Slightly alters brightness and contrast to simulate different lighting conditions.
 
 | Augmentation Examples |
