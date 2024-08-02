@@ -248,21 +248,41 @@ After applying image augmentation, the model improves but overfits, but we can a
         <img src="https://github.com/user-attachments/assets/b1e1e59e-322f-4a93-b12f-f841bca99605" alt="Precision Recall" width="300" height="200">
       </td>
     </tr>
+    <tr>
+      <td>
+        <strong><em>Base Model:</em></strong> <code>ResNet-50</code><br>
+        <strong><em>Epochs:</em></strong> <code>50</code><br>
+        <strong><em>Augmentation:</em></strong> <code>Yes</code><br>
+        <strong><em>Learning Rate:</em></strong> <code>1e-5</code><br>
+        <strong><em>Optimizer:</em></strong> <code>SGD</code><br>
+        <strong><em>Momentum:</em></strong> <code>0.9</code><br>
+        <strong><em>Batch Size:</em></strong> <code>32</code><br>
+        <strong><em>Regularization:</em></strong> <code>L2 (0.02)</code><br>
+        <strong><em>Input Resolution:</em></strong> <code>Medium</code>
+      </td>
+      <td>
+        <img src="https://github.com/user-attachments/assets/f7413ea1-ecac-4281-904f-7f0991df9455" alt="Accuracy" width="300" height="200">
+      </td>
+      <td>
+        <img src="https://github.com/user-attachments/assets/d731d021-2432-42c4-955d-113386c89055" alt="Precision Recall" width="300" height="200">
+      </td>
+    </tr>
   </tbody>
 </table>
 
 # Examples
 ## From Train Set
-![image](https://github.com/user-attachments/assets/b2216af9-8df7-44a8-be23-345b77a70431)
-![image](https://github.com/user-attachments/assets/8d7e1f38-3097-4f14-bd84-ee8efb13119a)
-![image](https://github.com/user-attachments/assets/6c7e3842-bc07-46d4-a0dc-e8832a143534)
+![image](https://github.com/user-attachments/assets/a679dce9-99a2-401d-95b0-85dec14ba8d1)
+![image](https://github.com/user-attachments/assets/885a55d0-2aa6-4abf-a211-9f3275b32a36)
+![image](https://github.com/user-attachments/assets/7038bc2a-99b8-428f-b892-d59f3f0051d4)
 
 
 
 ## From Test Set
 ![image](https://github.com/user-attachments/assets/f5111891-1c5a-46a6-aa52-a9aa52f5f4f9)
 ![image](https://github.com/user-attachments/assets/a7bc7b11-07bf-4141-be4b-ea58240c99c5)
-![image](https://github.com/user-attachments/assets/0629ce04-ac9c-49fa-9fd6-f7e18c12b0a8)
+![image](https://github.com/user-attachments/assets/e1c3bef5-1038-4237-bf04-5057ddb55bcb)
+
 
 
 
