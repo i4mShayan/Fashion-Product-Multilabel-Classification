@@ -6,6 +6,9 @@
 
 This project focuses on the **classification of fashion products** based on their visual features using deep learning models. The goal is to build a robust multilabel classification system that can identify various attributes of fashion items, such as category, color, and brand.
 
+You can check out the notebook from files section or from <a href="https://www.kaggle.com/code/shayankebriti/fashion-product-multilable-classification" target="_blank">Kaggle</a>.
+
+
 ## Dataset
 
 The dataset used in this project is the [Fashion Product Images Dataset](https://www.kaggle.com/datasets/paramaggarwal/fashion-product-images-dataset). It contains images of various fashion products along with their corresponding labels. The dataset is diverse, featuring multiple categories and attributes that are crucial for training and evaluating the classification models.
@@ -269,7 +272,8 @@ After applying image augmentation, the model improves but overfits, but we can a
         <strong><em>Momentum:</em></strong> <code>0.9</code><br>
         <strong><em>Batch Size:</em></strong> <code>32</code><br>
         <strong><em>Regularization:</em></strong> <code>L2 (0.01)</code><br>
-        <strong><em>Input Resolution:</em></strong> <code>Medium</code>
+        <strong><em>Input Resolution:</em></strong> <code>Medium</code><br>
+        <a href="https://www.kaggle.com/models/shayankebriti/fashion-product-multilabel-classification-model?select=model.keras">Download Model</a>
       </td>
       <td>
         <img src="https://github.com/user-attachments/assets/5ae9fcff-13b1-4a9d-b1dd-88183655e541" alt="Accuracy" width="300" height="200">
