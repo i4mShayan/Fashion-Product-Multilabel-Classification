@@ -1,6 +1,17 @@
 # Fashion Product Multilabel Classification
 
-# Finding the Ideal Base Model
+<a href="https://www.kaggle.com/code/shayankebriti/fashion-product-multilable-classification" target="_blank">
+  <img src="https://kaggle.com/static/images/open-in-kaggle.svg" alt="Open in Kaggle">
+</a>
+
+This project focuses on the **classification of fashion products** based on their visual features using deep learning models. The goal is to build a robust multilabel classification system that can identify various attributes of fashion items, such as category, color, and brand.
+
+## Dataset
+
+The dataset used in this project is the [Fashion Product Images Dataset](https://www.kaggle.com/datasets/paramaggarwal/fashion-product-images-dataset). It contains images of various fashion products along with their corresponding labels. The dataset is diverse, featuring multiple categories and attributes that are crucial for training and evaluating the classification models.
+
+
+## Finding the Ideal Base Model
 <table>
   <thead>
     <tr>
@@ -91,9 +102,9 @@
 
 
 
-# Image Augmentation
+## Image Augmentation
 
-## Pipeline
+### Pipeline
 The `augment_image` function applies the following transformations to enhance image variability:
 
 - **Random Scaling**: Zooms in and out by up to 35%.
@@ -108,7 +119,7 @@ The `augment_image` function applies the following transformations to enhance im
 | ![Augmentation_Example_2](https://github.com/user-attachments/assets/23e3f51c-456c-40d1-8f63-736fa1203e9b) |
 | ![Augmentation_Example_3](https://github.com/user-attachments/assets/113213ea-8c5a-4039-be93-bd194d39f171) |
 
-## Result
+### Result
 <table>
   <thead>
     <tr>
@@ -159,10 +170,10 @@ The `augment_image` function applies the following transformations to enhance im
   </tbody>
 </table>
 
-# Regularization
+## Regularization
 After applying image augmentation, the model improves but overfits, but we can address this issue by incorporating L2 regularization to enhance generalization.
 
-## Result
+### Result
 <table>
   <thead>
     <tr>
@@ -219,25 +230,6 @@ After applying image augmentation, the model improves but overfits, but we can a
         <strong><em>Optimizer:</em></strong> <code>SGD</code><br>
         <strong><em>Momentum:</em></strong> <code>0.9</code><br>
         <strong><em>Batch Size:</em></strong> <code>32</code><br>
-        <strong><em>Regularization:</em></strong> <code>L2 (0.01)</code><br>
-        <strong><em>Input Resolution:</em></strong> <code>Medium</code>
-      </td>
-      <td>
-        <img src="https://github.com/user-attachments/assets/5ae9fcff-13b1-4a9d-b1dd-88183655e541" alt="Accuracy" width="300" height="200">
-      </td>
-      <td>
-        <img src="https://github.com/user-attachments/assets/4583520a-6798-4b9a-b0f3-7c3354060fa6" alt="Precision Recall" width="300" height="200">
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <strong><em>Base Model:</em></strong> <code>ResNet-50</code><br>
-        <strong><em>Epochs:</em></strong> <code>50</code><br>
-        <strong><em>Augmentation:</em></strong> <code>Yes</code><br>
-        <strong><em>Learning Rate:</em></strong> <code>1e-5</code><br>
-        <strong><em>Optimizer:</em></strong> <code>SGD</code><br>
-        <strong><em>Momentum:</em></strong> <code>0.9</code><br>
-        <strong><em>Batch Size:</em></strong> <code>32</code><br>
         <strong><em>Regularization:</em></strong> <code>L2 (0.05)</code><br>
         <strong><em>Input Resolution:</em></strong> <code>Medium</code>
       </td>
@@ -267,18 +259,37 @@ After applying image augmentation, the model improves but overfits, but we can a
         <img src="https://github.com/user-attachments/assets/d731d021-2432-42c4-955d-113386c89055" alt="Precision Recall" width="300" height="200">
       </td>
     </tr>
+    <tr>
+      <td>
+        <strong><em>Base Model:</em></strong> <code>ResNet-50</code><br>
+        <strong><em>Epochs:</em></strong> <code>50</code><br>
+        <strong><em>Augmentation:</em></strong> <code>Yes</code><br>
+        <strong><em>Learning Rate:</em></strong> <code>1e-5</code><br>
+        <strong><em>Optimizer:</em></strong> <code>SGD</code><br>
+        <strong><em>Momentum:</em></strong> <code>0.9</code><br>
+        <strong><em>Batch Size:</em></strong> <code>32</code><br>
+        <strong><em>Regularization:</em></strong> <code>L2 (0.01)</code><br>
+        <strong><em>Input Resolution:</em></strong> <code>Medium</code>
+      </td>
+      <td>
+        <img src="https://github.com/user-attachments/assets/5ae9fcff-13b1-4a9d-b1dd-88183655e541" alt="Accuracy" width="300" height="200">
+      </td>
+      <td>
+        <img src="https://github.com/user-attachments/assets/4583520a-6798-4b9a-b0f3-7c3354060fa6" alt="Precision Recall" width="300" height="200">
+      </td>
+    </tr>
   </tbody>
 </table>
 
-# Examples
-## From Train Set
+## Examples
+### From Train Set
 ![image](https://github.com/user-attachments/assets/a679dce9-99a2-401d-95b0-85dec14ba8d1)
 ![image](https://github.com/user-attachments/assets/885a55d0-2aa6-4abf-a211-9f3275b32a36)
 ![image](https://github.com/user-attachments/assets/7038bc2a-99b8-428f-b892-d59f3f0051d4)
 
 
 
-## From Test Set
+### From Test Set
 ![image](https://github.com/user-attachments/assets/f5111891-1c5a-46a6-aa52-a9aa52f5f4f9)
 ![image](https://github.com/user-attachments/assets/a7bc7b11-07bf-4141-be4b-ea58240c99c5)
 ![image](https://github.com/user-attachments/assets/e1c3bef5-1038-4237-bf04-5057ddb55bcb)
